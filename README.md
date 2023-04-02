@@ -31,8 +31,7 @@ It uses modern frontend and backed development tools.
 
 <img src="client\src\components\assets\home page.jpg" alt="Add client" style="height: 500px; width:800px;"/>
 
-<img src="client\src\components\assets\add client.jpg" alt="Add client" style="height: 400px; width:400px;"/>
-<img src="client\src\components\assets\add project.jpg" alt="Add project" style="height: 400px; width:400px;"/>
+<img src="client\src\components\assets\add client.jpg" alt="Add client" style="height: 400px; width:400px;"/><img src="client\src\components\assets\add project.jpg" alt="Add project" style="height: 400px; width:400px;"/>
 
 <img src="client\src\components\assets\update project.jpg" alt="Add client" style="height: 600px; width:800px;"/>
 
