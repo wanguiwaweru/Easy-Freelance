@@ -7,8 +7,7 @@ export default function Projects() {
   const { loading, error, data } = useQuery(GET_PROJECTS);
 
   if (loading) return <Spinner />;
-  if (error) return <p>Something Went Wrong. Try Again</p>;
-
+  if (error) return <p>Something Went Wrong. Try Again</p>
   return (
     <>
       {data.projects.length > 0 ? (

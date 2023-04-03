@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import Spinner from '../components/Spinner';
 import ClientInfo from '../components/ClientInfo';
 import { useQuery } from '@apollo/client';
@@ -7,12 +7,12 @@ import EditProjectForm from '../components/EditProjectForm';
 import DeleteProjectButton from '../components/DeleteProjectButton';
 
 export default function Project() {
+  const navigate = useNavigate();
   const { id } = useParams();
   const { loading, error, data } = useQuery(GET_PROJECT, { variables: { id } });
 
   if (loading) return <Spinner />;
-  if (error) return <p>Something Went Wrong</p>;
-
+  if (error) return navigate("/error");
   return (
     <>
       {!loading && !error && (
