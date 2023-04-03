@@ -34,6 +34,10 @@ export default function EditProjectForm({ project }) {
     updateProject(name, description, status);
   };
 
+  const onClick = () => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  };
+
   return (
     <div className="mt-5">
       <h3>Update Project Details</h3>
@@ -70,10 +74,7 @@ export default function EditProjectForm({ project }) {
             <option value="completed">Completed</option>
           </select>
         </div>
-
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
+        <button onClick={onClick} type="submit" className="btn btn-primary">Submit</button>
       </form>
     </div>
   );
